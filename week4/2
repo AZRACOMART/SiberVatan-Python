@@ -13,8 +13,8 @@ tuple = (10,20,30,40,50)
 print(tuple)
 print(tuple[1])
 
-tuple[1] = 50
-print(tuple)  
+#tuple[1] = 50
+#print(tuple)  
 
 alt_tuple = tuple[1:4]
 print(alt_tuple)
