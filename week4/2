@@ -8,7 +8,7 @@ print(liste)
 alt_liste = liste[2:4]
 print(alt_liste)
 
-tuple
+#tuple
 tuple = (10,20,30,40,50)
 print(tuple)
 print(tuple[1])
@@ -19,7 +19,7 @@ print(tuple)
 alt_tuple = tuple[1:4]
 print(alt_tuple)
 
-kumeler 
+#kumeler 
 kume = {100,200,300,400,500,}
 print(kume)
 kume.add(600)
@@ -28,7 +28,7 @@ print(type(kume))
 kume.update([400,900])
 print(kume)
 
-dict dictionary sözlük
+#dict dictionary sözlük
 
 dict = {'anahtar1':'deger1','anahtar2':'deger2'}
 print(dict)
