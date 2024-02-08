@@ -1,0 +1,41 @@
+#meyveler= ["elma","kivi","limon","böğürtlen"]
+# print(meyveler[2])
+# print(meyveler)
+
+# sayılar=[10,20,30,40,50]
+# # sayılar[0]+=sayılar[1]
+# # sayılar[0]+=sayılar[2]
+# # sayılar[0]+=sayılar[3]
+# # print(sayılar[0])
+# toplam=0
+# for sayı in sayılar:
+#     toplam+=sayı
+    
+# print(toplam)
+
+# for meyve in meyveler:
+#     print(meyve)
+
+# sayılar=[2,4,6,1,9,45,78,35]
+# for sayı in sayılar:
+#     if(sayı%2==0):
+#         continue
+#     else:
+#         print(sayı)
+        
+#     print("sibervatan")
+
+
+# sayılar=int(input("bir sayı giriniz:"))
+# sayac=0
+# while sayac<=sayılar:
+#     print(sayac)
+#     sayac+=1
+
+# liste=[]
+# i=0
+# while i<5:
+#     sayı=int(input("bir sayı girniz"))
+#     liste.append(sayı)
+#     i+=1
+# print(liste)
