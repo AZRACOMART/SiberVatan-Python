@@ -1,0 +1,18 @@
+#Bir fonksiyon oluşturun. Fonksiyon içinde iki liste olsun ilk listenin çift sayılarını ikinci listenin tek sayılarını alıp yeni bir listeye ekleyin ve ekrana yazdırın.
+
+liste1 = [7,6,15,36,31]
+liste2 = [9,5,8,12,18]
+
+def topla(liste1, liste2):
+    liste = []
+    for num in liste1:
+        if num%2==0:
+            liste.append(num)
+    for num in liste2:
+        if num%2!=0:
+            liste.append(num)
+    return liste
+
+liste = topla(liste1, liste2)
+print(liste)
+ 
