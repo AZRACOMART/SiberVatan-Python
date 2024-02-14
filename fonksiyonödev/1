@@ -1,0 +1,14 @@
+#Bir fonksiyon oluşturun. Emeklilik yaşını 65 olarak belirleyin. Kullanıcıdan yaşını alıp 65 yaş altındakilere emekliliğine kaç yıl kaldığını
+#65 yaş üstüne zaten emekli olduğunu ekrana yazdırın
+
+
+def emeklilik_yasi(yas):
+    emeklilikyası=65
+    if yas<emeklilikyası:
+        emekliliğe_kalanyıl=emeklilikyası-yas
+        print(f"emekliliğinize {emekliliğe_kalanyıl} yıl kaldı")
+    else:
+        print("emeklisiniz")
+
+yas=int(input("yasınızı giriniz:"))
+emeklilik_yasi(yas)  
