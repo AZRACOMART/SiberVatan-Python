@@ -1,0 +1,109 @@
+def selamdunya():
+    print("hello world")
+    
+selamdunya()
+
+
+def hosgeldin(name):
+    print("hosgeldin "+name)
+
+hosgeldin('azra')
+
+
+def hosgeldin(name):
+    print("hosgeldin "+name)
+name=input("isim giriniz:")
+
+hosgeldin(name)
+
+
+def hosgeldin(name):
+    print("hosgeldin "+name)
+
+hosgeldin(input("isimgir:"))
+
+
+def fonksiyon(sehir = "karabuk"):
+    print("en sevdiğim şehir "+sehir)
+
+fonksiyon("istanbul")
+fonksiyon()
+
+
+def sayı(x):
+    x = x+5
+    return x
+
+sonuc=sayı(12)
+print(sonuc)
+
+
+def fonksiyon(x, y):
+    return x+y
+sonuc=fonksiyon(10,7)
+print(sonuc)
+
+
+def fonk_tuple(*argv):
+    for arg in argv:
+        print(arg)
+
+fonk_tuple('selam','naber','nasılsın','iyidir') 
+
+
+def fonksiyon(n):
+    ciftsayı_list=[]
+    for i in range(0,n+1):
+        if i%2==0:
+            ciftsayı_list.append(i)
+    return ciftsayı_list
+
+limit=int(input("sınır gir:"))
+print(fonksiyon(limit))
+
+def toplam(num1,num2):
+    return num1+num2
+def çıkarma(num1,num2):
+    return num1-num2
+def çarpma(num1,num2):
+    return num1*num2
+def bölme(num1,num2):
+    if num2==0:
+        print("tanımsız")
+        return 0
+    else:
+        return num1/num2
+def faktöriyel(num1):
+    if num1==0:
+        return 1
+    else:
+        return num1*faktöriyel(num1-1)
+devam_etsinMi=True
+while (devam_etsinMi):
+    print("-*-*-*-*-*-*hosgeldiniz-*-*-*-*-*-*-*")
+    print("toplama için 1")
+    print("çıkarma için 2")
+    print("çarpma için 3")
+    print("bölme için 4")
+    print("çıkmak için 5")
+    print("faktöriyel için 6")
+    secenek=int(input("secenegin ne:"))
+    num1=int(input("sayı gir"))
+    num2=int(input("sayı2 gir"))
+    sonuc=0
+    if secenek==1:
+        sonuc=toplam(num1,num2)
+    elif secenek==2:
+        sonuc=çıkarma(num1,num2)
+    elif secenek==3:
+        sonuc=çarpma(num1,num2)
+    elif secenek==4:
+        sonuc=bölme(num1,num2)
+    elif secenek==5:
+        devam_etsinMi=False
+    elif secenek==6:
+        sonuc=faktöriyel(num1)
+    else:
+        print("geçerli sayı giriniz")
+
+    print(sonuc)
