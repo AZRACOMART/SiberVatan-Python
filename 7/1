@@ -1,0 +1,97 @@
+# class Person():
+#     def __init__(self,name,surname):
+#         self.name=name
+#         self.surname=surname
+#         print("person olustu")
+#     def ben_kimim(self):
+#         print("ben kisiyim")
+# class Teacher(Person):
+#     def __init__(self,name,surname,branch):
+#         super().__init__(name,surname)
+#         self.branch=branch
+#         print("teacher olustu")
+#     def ben_kimim(self):
+#             print("ben ogretmenim")
+# class Student(Person):
+#     def __init__(self,name,surname,number):
+#         self.number=number
+#         Person.__init__(self,name,surname)
+#         print("student olustu")
+#     def ben_kimim(self):
+#             print("ben ogrenciyim")
+# p1=Person(name="AZRA",surname="COMART")
+# print(p1) 
+# t1=Teacher(name="azra",surname="comart",branch="kimya")
+# print(t1)
+# s1=Student(name="azra",surname="comart",number=372)
+# print(s1) 
+# p1.ben_kimim()
+# s1.ben_kimim()
+# t1.ben_kimim()  #overrading
+
+
+# class Hesaplama():
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
+#     def sonucu_bul(self):
+#         pass
+# class Toplama(Hesaplama):
+#     def sonucu_bul(self):
+#         return self.x+self.y
+# class Çıkarma(Hesaplama): 
+#     def sonucu_bul(self):
+#         return self.x-self.y
+# class Çarpma(Hesaplama):
+#     def sonucu_bul(self):
+#         return self.x*self.y
+# class Bölme(Hesaplama):
+#     def sonucu_bul(self):
+#         return self.x/self.y
+# t1=Toplama(15,5)
+# ç1=Çıkarma(15,5)
+# ç2=Çarpma(15,5)
+# b1=Bölme(15,5)
+# print(t1.sonucu_bul())
+# print(ç1.sonucu_bul())
+# print(ç2.sonucu_bul())
+# print(b1.sonucu_bul())
+
+
+# class Marka_model():
+#     def __init__(self,marka,model):
+#             self.marka=marka
+#             self.model=model
+
+#     def arac_Bilgileri(self):
+#           print(f"marka:{self.marka}:model:{self.model}")
+#           return self.marka,self.model 
+    
+# class Motor_gucu():
+#       def __init__(self,gücü):
+#            self.gücü=gücü
+#       def motor_Bilgileri(self):
+#             print(f"gücü:{self.gücü}")
+       
+# class Araba(Marka_model,Motor_gucu):
+#       def __init__(self,marka,model,gücü):
+#           Marka_model.__init__(self,marka,model)            
+#           Motor_gucu.__init__(self,gücü)  
+            
+#       def araba_Bilgileri(self):
+#         self.arac_Bilgileri()
+#         self.motor_Bilgileri()
+          
+              
+# t1=Araba("Bmw","minivan",115)
+# t1.araba_Bilgileri()
+
+# def floyd(satir):
+#     number=1
+#     for i in range(1,satir+1):
+#         for j in range(1,i+1):
+#             print(number,end=" ")
+#             number +=1
+#         print()    
+# satir=int(input("satir sayisini giriniz:"))
+# floyd(satir)
