@@ -1,0 +1,57 @@
+# kelime palidnrom kontrol
+# ben yazdım 
+kelime=input("kelime giriniz:")
+def palindrom_kontrol(kelime):
+    ters_kelime=kelime[::-1]
+    if ters_kelime!=kelime:
+        print("bu kelime palindrome değildir")
+    else:
+        print("bu kelime palindromedir")
+palindrom_kontrol(kelime)
+# hoca yazdı
+def palindrom_kontroll(metin):
+    temiz_metin=metin.upper()
+    return temiz_metin==temiz_metin[::-1]
+metin=input("metin giriniz:")
+if palindrom_kontroll(metin):
+    print("bu kelime palindromedir")
+else:
+    print("bu kelime palindrome değildir")
+
+#ortak eleman alma
+def ortak_eleman(l1,l2):
+    ortak=list()
+    for x in l1:
+        if x in l2:
+            ortak.append(x)
+    return ortak
+l1=[1,2,3,4,5]
+l2=[3,4,5,6,7]
+print(ortak_eleman(l1,l2))
+
+
+#eleman frekansı bulma
+liste=[1,1,1,1,1,1,1,1,1,0,0,0,0,0]
+def eleman_frekansı(liste):
+    frekans={}
+    for i in liste:
+        if i in frekans:
+            frekans[i]+=1
+        else:
+            frekans[i]=1
+    return frekans
+sonuc=eleman_frekansı(liste)
+for eleman,frekans in sonuc.items():
+    print(f"{eleman}:{frekans}")
+
+
+#fibonacci dizisinin ilk n termini hesaplama
+def fibonacci(n):
+    fibo=[0,1]
+    for _ in range(2,n):
+        next=fibo[-1]+fibo[-2]
+        fibo.append(next)
+    return fibo
+n=22
+fibo=fibonacci(n)
+print(f"{fibo}")
