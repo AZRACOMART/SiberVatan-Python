@@ -1,0 +1,3 @@
+print("kütüphane calisiyor...")
+number=10
+sayilar=[1,0,3,5]
