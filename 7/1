@@ -1,0 +1,46 @@
+
+def hesaplamasaatlik(toplam_calisma_saati):
+    if toplam_calisma_saati <= 40:
+        maas = toplam_calisma_saati*50
+    else:
+        maas = 40 * 50 + (toplam_calisma_saati-40) * 50*1.5
+    return maas 
+
+def hesaplamakomisyon(aylik_satis):
+    maas = 500 + aylik_satis * 0.5
+    return maas
+
+while True:
+    odeme=input("odeme kodunu giriniz.(1 saatlik calisan icin 1, 2 komisyon calisani icin 2)")
+
+    if odeme =="1":
+        toplam_calisma_saati = float (input("toplam calisma saatini giriniz:"))
+        maas= hesaplamasaatlik(toplam_calisma_saati)
+        print(f"maasiniz {maas} TL")
+    elif odeme == "2":
+        aylik_satis = float(input("aylik satis miktarini giriniz:"))
+        maas= hesaplamakomisyon(aylik_satis)
+        print(f"maasiniz {maas} TL")
+    else:
+        print("gecersiz odeme kodu yanlis girdiniz")
+
+def sicaklik_araligi(sicakliklar):
+    sicaklik_araliklari = {
+        "(-20) - (0)":0,
+        "(0) - (20)":0,
+        "(20) - (40)":0,
+    }
+
+    for sicaklik in sicakliklar:
+        if -20 <= sicaklik < 0:
+            sicaklik_araliklari["(-20) - (0)"] += 1
+        elif 0 <= sicaklik < 20:
+            sicaklik_araliklari["(0) - (20)"] += 1
+        elif 20 <= sicaklik < 40:
+            sicaklik_araliklari["(20) - (40)"] += 1
+
+    for aralik,sayi in sicaklik_araliklari.items():
+        print(aralik,"arasinda",sayi, "tane sicaklik var")
+
+sicaklik_listesi = [5,-15,25,12,2,30,18,-5,35,-18,8]
+sicaklik_araligi(sicaklik_listesi)
